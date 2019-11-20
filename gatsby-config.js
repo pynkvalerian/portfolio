@@ -3,6 +3,7 @@ module.exports = {
     title: `Yen Ping Chew`,
     description: `Software Engineer, pharmacist, data enthusiast.`,
     author: `@pynkvalerian`,
+    siteUrl: `https://www.yenpingchew.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -53,6 +54,7 @@ module.exports = {
         cookieDomain: "yenpingchew.com",
       },
     },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
