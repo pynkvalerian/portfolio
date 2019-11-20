@@ -1,0 +1,92 @@
+$primary-yellow: #ffd105;
+$primary-blue: #005dab;
+
+header {
+  text-align: center;
+  h1 a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+body {
+  max-width: 600px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 2rem;
+}
+
+footer {
+  text-align: center;
+}
+
+form {
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  input, textarea {
+    width: fill;
+    border: solid .5px #D3D3D3;
+    border-radius: 2px;
+    padding: .3rem;
+  }
+  input[type="submit"] {
+    width: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+a {
+  color: $primary-blue;
+}
+
+.main {
+  min-height: 60vh;
+
+  a {
+    position: relative;
+    text-decoration: none;
+    // display: inline-block;
+    color: black;
+    // padding: 0 1px;
+    transition: color ease 0.3s;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      background-color: $primary-yellow;
+      transition: height ease 0.3s;
+    }
+
+    &:hover {
+      &::after {
+        background-color: $primary-yellow;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.section {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: $primary-yellow;
+}
